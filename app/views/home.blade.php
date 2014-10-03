@@ -12,8 +12,10 @@
 			</div>
 
 
-<br><br><br><br><br><br><br><br>
-			<p>
+		<p class="lead-24 pi-weight-300 pi-uppercase pi-margin-bottom-40 pi-letter-spacing pi-text-white">
+				{{trans('app.title_home')}}
+			</p>
+
 				<a href="/pages/quienessomos" class="btn pi-btn-base pi-btn-no-border pi-shadow pi-btn-big">
 					Quienes Somos
 				</a>
