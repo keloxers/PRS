@@ -26,9 +26,6 @@
 </div>
 
 
-
-
-
 <?php if (count($articulos_tapa)) { ?>
 	<?php } ?>
 
