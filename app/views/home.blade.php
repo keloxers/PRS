@@ -16,41 +16,30 @@
 
 <div id="page"><!-- - - - - - - - - - SECTION - - - - - - - - - -->
 
-<div class="tp-banner-container">
-<div class="tp-banner pi-revolution-slider" >
-<ul class="">
+<div class="pi-section-w pi-shadow-inside-top pi-section-parallax" style="background-image: url(img_external/gallery/water-wave-bg-1.jpg);">
+	<div class="pi-section pi-padding-top-90 pi-padding-bottom-70 pi-text-center">
 
-<!-- SLIDE -->
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" >
-<!-- MAIN IMAGE -->
-<img src="img_external/gallery/water-wave-bg-1.jpg"  alt=""  data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
-<!-- LAYERS -->
+		<div class="pi-img-w pi-img-center pi-margin-bottom-40" style="width: 140px;">
+			<img src="img_external/gallery/logo-big-white-circle.png" alt="">
+		</div>
 
+		<p class="lead-24 pi-weight-300 pi-uppercase pi-margin-bottom-40 pi-letter-spacing pi-text-white">
+			Partido para la Renovacion Social
+		</p>
 
-</li>
+		<!-- <p>
+			<a href="#" class="btn pi-btn-base pi-btn-no-border pi-shadow pi-btn-big">
+				Get a Free Quote
+			</a>
+		</p> -->
 
-<!-- SLIDE -->
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" >
-<!-- MAIN IMAGE -->
-<img src="img_external/gallery/water-wave-bg-2.jpg"  alt=""  data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
-<!-- LAYERS -->
-
-
-</li>
-<!-- SLIDE -->
-<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" >
-<!-- MAIN IMAGE -->
-<img src="img_external/gallery/water-wave-bg-3.jpg"  alt=""  data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
-<!-- LAYERS -->
-
-
-</li>
-
-
-</ul>
-
+	</div>
 </div>
-</div>
+
+<!-- - - - - - - - - - END SECTION - - - - - - - - - -->
+
+
+
 
 <span class="revolution-slider"></span>
 
