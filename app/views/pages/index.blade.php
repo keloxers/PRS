@@ -27,6 +27,7 @@
 
 											<tr>
 												<th>Pagina</th>
+												<th>Padre</th>
 												<th align="center">Accion</th>
 											</tr>
 										</thead>
@@ -40,6 +41,7 @@
 
 														echo "<tr>";
 												        echo "<td>" . $page->page . "</td>";
+																echo "<td>" . $page->padre . "</td>";
 												        echo "<td align='center'>" ;
 
 														echo "<a href='/pages/" . $page->id . "/edit' class='btn pi-btn-orange pi-btn-small'>Editar</a> ";

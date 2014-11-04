@@ -1,29 +1,60 @@
 @extends('layouts.default')
 @section('content')
 
+	<link rel="stylesheet" type="text/css" href="/css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/loader.css"/>
+	<link rel="stylesheet" type="text/css" href="/3dParty/rs-plugin/css/pi.settings.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/testimonials.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/slider.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/galleries.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/images.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/portfolio.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/alert-boxes.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/animations.css"/>
+	<link rel="stylesheet" type="text/css" href="/3dParty/colorbox/colorbox.css"/>
+
 
 <div id="page"><!-- - - - - - - - - - SECTION - - - - - - - - - -->
 
-	<div class="pi-section-w pi-shadow-inside-top pi-section-parallax" style="background-image: url(img_external/gallery/water-wave-bg-1.jpg);">
-		<div class="pi-section pi-padding-top-90 pi-padding-bottom-70 pi-text-center">
+<div class="tp-banner-container">
+<div class="tp-banner pi-revolution-slider" >
+<ul class="">
 
-			<div class="pi-img-w pi-img-center pi-margin-bottom-40" style="width: 140px;">
-				<img src="img_external/gallery/logo-big-white-circle.png" alt="">
-			</div>
+<!-- SLIDE -->
+<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" >
+<!-- MAIN IMAGE -->
+<img src="img_external/gallery/water-wave-bg-1.jpg"  alt=""  data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
+<!-- LAYERS -->
 
 
-		<p class="lead-24 pi-weight-300 pi-uppercase pi-margin-bottom-40 pi-letter-spacing pi-text-white">
-				{{trans('app.title_home')}}
-			</p>
+</li>
 
-				<a href="/pages/quienessomos" class="btn pi-btn-base pi-btn-no-border pi-shadow pi-btn-big">
-					Quienes Somos
-				</a>
-			</p>
+<!-- SLIDE -->
+<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" >
+<!-- MAIN IMAGE -->
+<img src="img_external/gallery/water-wave-bg-2.jpg"  alt=""  data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
+<!-- LAYERS -->
 
-		</div>
-	</div>
+
+</li>
+<!-- SLIDE -->
+<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" >
+<!-- MAIN IMAGE -->
+<img src="img_external/gallery/water-wave-bg-3.jpg"  alt=""  data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
+<!-- LAYERS -->
+
+
+</li>
+
+
+</ul>
+
 </div>
+</div>
+
+<span class="revolution-slider"></span>
+
+<!-- - - - - - - - - - END SECTION - - - - - - - - - -->
 
 
 <?php if (count($articulos_tapa)) { ?>
@@ -162,5 +193,40 @@
 	</div>
 </div>
 </div>
+
+
+<script src="/3dParty/jquery-1.11.0.min.js"></script>
+<script src="/scripts/pi.helpers.js"></script>
+<script src="/scripts/pi.boundManager.js"></script>
+<script src="/scripts/pi.imagesLoader.js"></script>
+<script src="/scripts/pi.columnFix.js"></script>
+<script src="/scripts/pi.init.caption.js"></script>
+<script src="/scripts/pi.slider.js"></script>
+<script src="/scripts/pi.init.slider.js"></script>
+<script src="/scripts/pi.parallax.js"></script>
+<script src="/scripts/pi.init.parallax.js"></script>
+<script src="/3dParty/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script src="/3dParty/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="/scripts/pi.init.revolutionSlider.js"></script>
+<script src="/scripts/pi.init.social.js"></script>
+<script src="/scripts/pi.ddMenu.js"></script>
+<script src="/scripts/pi.init.removeLastElMargin.js"></script>
+<script src="/scripts/pi.fixedHeader.js"></script>
+<script src="/scripts/pi.mobileMenu.js"></script>
+<script src="/scripts/pi.init.submitFormFooter.js"></script>
+<script src="/scripts/pi.detectTransition.js"></script>
+<script src="/scripts/pi.alert.js"></script>
+<script src="/scripts/pi.init.formsBlurClasses.js"></script>
+<script src="/scripts/pi.init.placeholder.js"></script>
+<script src="/3dParty/colorbox/jquery.colorbox-min.js"></script>
+<script src="/scripts/pi.init.colorbox.js"></script>
+<script src="/3dParty/jquery.easing.1.3.js"></script>
+<script src="/3dParty/jquery.scrollTo.min.js"></script>
+<script src="/scripts/pi.init.jqueryScrollTo.js"></script>
+<script src="/scripts/pi.scrollTopArrow.js"></script>
+<script src="/3dParty/tweetie/tweetie.min.js"></script>
+<script src="/scripts/pi.init.tweetie.js"></script>
+
+
 
 @stop

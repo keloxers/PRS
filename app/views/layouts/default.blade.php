@@ -22,7 +22,7 @@
 
 	<!--Fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic'
-		  rel='stylesheet' type='text/css'>
+			rel='stylesheet' type='text/css'>
 
 	<!--Fonts with Icons-->
 	<link rel="stylesheet" href="/3dParty/fontello/css/fontello.css"/>
@@ -56,7 +56,7 @@
 		<div class="pi-header-block pi-header-block-txt">
 				<i class="pi-header-block-icon icon-mail pi-icon-base pi-icon-square"></i>{{trans('app.email')}}
 		</div>
-		    <!--  End radio -->
+				<!--  End radio -->
 
 		<!-- Social icons -->
 		<div class="pi-header-block pi-pull-right pi-hidden-2xs">
@@ -88,40 +88,54 @@
 <!-- End logo -->
 
 <!-- Text -->
-<div class="pi-header-block pi-header-block-txt pi-hidden-2xs">Partido de la Renovacion Social</div>
+<div class="pi-header-block pi-header-block-txt pi-hidden-2xs">Partido para la Renovacion Social</div>
 <!-- End text -->
 
 <!-- Menu -->
 <div class="pi-header-block pi-pull-right">
 <ul class="pi-simple-menu pi-has-hover-border pi-full-height pi-hidden-sm">
 
-<li class="pi-has-dropdown"><a href="/"><span>Home</span></a>
-	<ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
 
 
-		<li><a href="/contactos/create"><span>Contactarse</span></a></li>
 
-		<?php
+<?php
+$pagestops = DB::table('pages')
+									->where('activo', '=', 'si')
+									->where('padre', '=', '')
+									->where('mostrar_menu', '=', 'si')
+									->orderBy('page', 'asc')->get();
 
-				$pages = DB::table('pages')
-													->where('activo', '=', 'si')
-													->where('mostrar_menu', '=', 'si')
-													->orderBy('page', 'asc')->get();
 
-				if (count($pages)) {
-					foreach ($pages as $page) {
-						?>
-							<li><a href="/pages/{{$page->url_seo}}"><span>{{$page->page}}</span></a></li>
+if (count($pagestops) ) {
+
+	foreach ($pagestops as $pagestop) {
+?>
+
+				<li class="pi-has-dropdown"><a href="#"><span>{{ $pagestop->page }}</span></a>
+					<ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
 						<?php
-					}
-				}
+								$pages = DB::table('pages')
+																	->where('activo', '=', 'si')
+																	->where('padre', '=', $pagestop->page)
+																	->where('mostrar_menu', '=', 'si')
+																	->orderBy('page', 'asc')->get();
+								if (count($pages)) {
+									foreach ($pages as $page) {
+										?>
+											<li><a href="/pages/{{$page->url_seo}}"><span>{{$page->page}}</span></a></li>
+										<?php
+									}
+								}
+						?>
+					</ul>
+				</li>
 
-		?>
+<?php
+			}
+		}
 
+?>
 
-	</ul>
-
-</li>
 
 
 
@@ -134,7 +148,7 @@
 		<li><a href="/articulos/ver"><span>Articulos</span></a></li>
 
 		<li><a href="/contactos"><span>Contactos</span></a></li>
-    <li><a href="/pages"><span>Paginas</span></a></li>
+		<li><a href="/pages"><span>Paginas</span></a></li>
 	</ul>
 
 </li>
@@ -471,13 +485,13 @@
 <script src="/scripts/pi.init.tweetie.js"></script>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-137439-1', 'auto');
-  ga('send', 'pageview');
+	ga('create', 'UA-137439-1', 'auto');
+	ga('send', 'pageview');
 
 </script>
 </body>

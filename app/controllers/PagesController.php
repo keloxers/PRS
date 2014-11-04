@@ -43,24 +43,26 @@ class PagesController extends BaseController {
 
 		// 'categorias_id' => 'exists:rubros,id'
 
-		$rules = [
-			'page' => 'required',
-			'html' => 'required',
-			'url_seo' => 'required',
-		];
-
-
-		if (! Page::isValid(Input::all(),$rules)) {
-
-			return Redirect::back()->withInput()->withErrors(Page::$errors);
-
-		}
+		// $rules = [
+		// 	'page' => 'required',
+		// 	'html' => 'required',
+		// 	'url_seo' => 'required',
+		// 	'padre' => 'required',
+		// ];
+		//
+		//
+		// if (! Page::isValid(Input::all(),$rules)) {
+		//
+		// 	return Redirect::back()->withInput()->withErrors(Page::$errors);
+		//
+		// }
 
 		$page = new Page;
 
 		$page->page = Input::get('page');
 		$page->html = Input::get('html');
 		$page->url_seo = Input::get('url_seo');
+		$page->padre = Input::get('padre');
 		$page->activo = Input::get('activo');
 		$page->mostrar_menu = Input::get('mostrar_menu');
 
@@ -125,6 +127,7 @@ class PagesController extends BaseController {
 			'page' => 'required',
 			'html' => 'required',
 			'url_seo' => 'required',
+			'padre' => 'required',
 		];
 
 
@@ -137,6 +140,7 @@ class PagesController extends BaseController {
 		$page->page = Input::get('page');
 		$page->html = Input::get('html');
 		$page->url_seo = Input::get('url_seo');
+		$page->padre = Input::get('padre');
 		$page->activo = Input::get('activo');
 		$page->mostrar_menu = Input::get('mostrar_menu');
 
