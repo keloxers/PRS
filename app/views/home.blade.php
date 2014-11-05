@@ -24,7 +24,7 @@
 		</div>
 
 		<p class="lead-24 pi-weight-300 pi-uppercase pi-margin-bottom-40 pi-letter-spacing pi-text-white">
-			Partido para la Renovacion Social
+			Partido de la Renovacion Social
 		</p>
 
 		<!-- <p>
