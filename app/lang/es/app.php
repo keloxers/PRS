@@ -18,13 +18,13 @@ return array(
 
 	'telefono'		=>	"<strong>+54 03756 481064</strong>",
 
-	'seguinos_facebook'		=>	"",
+	'seguinos_facebook'		=>	"https://www.facebook.com/pages/Partido-de-la-Renovaci%C3%B3n-Social/777181235656626?ref=hl",
 
-	'seguinos_twitter'		=>	"",
+	'seguinos_twitter'		=>	"https://twitter.com/PartidoRSocial",
 
-	'seguinos_googleplus'		=>	"",
+	'seguinos_googleplus'		=>	"https://plus.google.com/u/0/117914111014830448957/posts",
 
-	'seguinos_instagram'		=>	"",
+	'seguinos_instagram'		=>	"https://www.youtube.com/channel/UC0u7IL3yl6rVbv5N3BfbiJA",
 
 	'seguinos_youtube'		=>	"",
 
