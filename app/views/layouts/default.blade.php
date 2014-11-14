@@ -162,7 +162,7 @@ if (count($pagestops) ) {
 		<li><a href="{{ URL::to('/users') }}"><span>{{trans('pages.users')}}</span></a></li>
 		<li><a href="{{ URL::to('/groups') }}"><span>{{trans('pages.groups')}}</span></a></li>
 		<li><a href="/articulos/ver"><span>Articulos</span></a></li>
-
+		<li><a href="/afiliados"><span>Afiliados</span></a></li>
 		<li><a href="/contactos"><span>Contactos</span></a></li>
 		<li><a href="/pages"><span>Paginas</span></a></li>
 	</ul>

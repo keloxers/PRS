@@ -83,6 +83,7 @@ Route::group(['before' => 'auth|standardUser'], function()
 
 
 		Route::resource('articulos', 'ArticulosController');
+		Route::resource('afiliados', 'AfiliadosController');
 
 //		Route::resource('clasificados', 'ClasificadosController');
 
