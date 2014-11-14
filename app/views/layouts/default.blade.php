@@ -129,6 +129,7 @@ if (count($pagestops) ) {
 
 				<li class="pi-has-dropdown"><a href="#"><span>{{ $pagestop->page }}</span></a>
 					<ul class="pi-submenu pi-has-border pi-items-have-borders pi-has-shadow pi-submenu-dark">
+						<li><a href="/afiliados/create"><span>Afiliarse</span></a></li>
 						<?php
 								$pages = DB::table('pages')
 																	->where('activo', '=', 'si')
