@@ -93,10 +93,10 @@ Route::group(['before' => 'auth|standardUser'], function()
 		Route::resource('articulos', 'ArticulosController');
 
 
-		// Route::get('/afiliados/{id}', 'AfiliadosController@show');
-		// Route::get('/afiliados', 'AfiliadosController@index');
+		Route::get('/afiliados/{id}', 'AfiliadosController@show');
+		Route::get('/afiliados', 'AfiliadosController@index');
 
-		Route::resource('afiliados', 'AfiliadosController');
+		// Route::resource('afiliados', 'AfiliadosController');
 
 //		Route::resource('clasificados', 'ClasificadosController');
 
