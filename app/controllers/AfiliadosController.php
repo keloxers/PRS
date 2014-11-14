@@ -73,7 +73,7 @@ class AfiliadosController extends BaseController {
 
 		$afiliado->save();
 
-		return Redirect::to('/afiliados');
+		return Redirect::to('/');
 
 	}
 

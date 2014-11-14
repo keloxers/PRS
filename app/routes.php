@@ -61,10 +61,14 @@ Route::get( '/', array(
 
 
 Route::get('/afiliados/create', 'AfiliadosController@create');
+
+
 Route::post( '/afiliados/store', array(
 		'as' => 'afiliados.store',
 		'uses' => 'AfiliadosController@store'
 ) );
+
+
 
 
 # Standard User Routes
@@ -89,10 +93,10 @@ Route::group(['before' => 'auth|standardUser'], function()
 		Route::resource('articulos', 'ArticulosController');
 
 
-		Route::get('/afiliados/{id}', 'AfiliadosController@destroy');
-		Route::get('/afiliados', 'AfiliadosController@index');
+		// Route::get('/afiliados/{id}', 'AfiliadosController@show');
+		// Route::get('/afiliados', 'AfiliadosController@index');
 
-		// Route::resource('afiliados', 'AfiliadosController');
+		Route::resource('afiliados', 'AfiliadosController');
 
 //		Route::resource('clasificados', 'ClasificadosController');
 
