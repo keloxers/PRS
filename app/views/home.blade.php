@@ -27,11 +27,11 @@
 			Partido de la Renovacion Social
 		</p>
 
-		<!-- <p>
-			<a href="#" class="btn pi-btn-base pi-btn-no-border pi-shadow pi-btn-big">
-				Get a Free Quote
+		<p>
+			<a href="/afiliados/create" class="btn pi-btn-base pi-btn-no-border pi-shadow pi-btn-big">
+				Afiliarse
 			</a>
-		</p> -->
+		</p>
 
 	</div>
 </div>
